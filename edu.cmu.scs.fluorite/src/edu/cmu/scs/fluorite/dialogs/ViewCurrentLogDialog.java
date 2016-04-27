@@ -14,10 +14,12 @@ import edu.cmu.scs.fluorite.model.Events;
 
 public class ViewCurrentLogDialog extends Dialog {
 	private Events mEvents;
+	private int scoreType;
 
-	public ViewCurrentLogDialog(Shell shell, Events events) {
+	public ViewCurrentLogDialog(Shell shell, Events events, int t) {
 		super(shell);
 		mEvents = events;
+		scoreType =t;
 		setShellStyle(getShellStyle() | SWT.RESIZE | SWT.MAX);
 	}
 
@@ -36,7 +38,7 @@ public class ViewCurrentLogDialog extends Dialog {
 		exportText.setLayoutData(gd);
 
 		String eventsXML = EventRecorder.persistMacro(mEvents);
-		exportText.setText(eventsXML);
+		exportText.setText("Your score is "+6);
 
 		return comp;
 	}

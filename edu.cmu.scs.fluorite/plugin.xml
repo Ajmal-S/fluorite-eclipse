@@ -15,12 +15,12 @@
             defaultHandler="edu.cmu.scs.fluorite.ui.handlers.AnnotateCommandHandler"
             description="Please help the researcher by describing the intent of your recent backtracking / code editing"
             id="edu.cmu.scs.fluorite.annotateCommand"
-            name="Describe what you are doing">
+            name="Hard Score">
       </command>
       <command
             description="View the last recorded log file in xml format"
             id="edu.cmu.scs.fluorite.actions.viewLastLog"
-            name="View Last Log">
+            name="Fuzzy Score">
       </command>
    </extension>
    <extension
@@ -37,7 +37,7 @@
       <page
             class="edu.cmu.scs.fluorite.dialogs.OptionsPage"
             id="edu.cmu.scs.fluorite.optionsPage"
-            name="Fluorite">
+            name="Score">
       </page>
    </extension>
    <extension

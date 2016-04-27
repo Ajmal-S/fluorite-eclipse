@@ -31,7 +31,7 @@ public class ViewLastLogAction extends Action implements
 	public void run() {
 		Shell shell = Display.getDefault().getActiveShell();
 		ViewCurrentLogDialog dialog = new ViewCurrentLogDialog(shell,
-				EventRecorder.getInstance().getRecordedEventsSoFar());
+				EventRecorder.getInstance().getRecordedEventsSoFar(),1);
 		dialog.open();
 	}
 
